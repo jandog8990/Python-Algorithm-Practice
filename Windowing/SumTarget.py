@@ -1,3 +1,4 @@
+# find target using sliding window
 def check_for_target(nums, target):
     left = 0
     right = len(nums) - 1

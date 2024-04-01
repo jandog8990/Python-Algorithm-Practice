@@ -14,7 +14,7 @@ def find_substring(s, t):
     else:
         return True
 
-t = "aed"
+t = "ade"
 s = "abcde"
 res = find_substring(s, t)
 print(f"Result = {res}")
