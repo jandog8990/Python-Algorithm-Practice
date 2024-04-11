@@ -10,10 +10,14 @@ class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if not root: 
             return 0
-
+        
+        print(f"curr node = {root.val}")
         left = self.maxDepth(root.left)
+        print(f"left max depth = {left}") 
         right = self.maxDepth(root.right)
+        print(f"right max depth = {right}") 
         maxlr = max(left,right)
+        print(f"maxlr + 1 = {maxlr+1}\n")
 
         return maxlr + 1
 
