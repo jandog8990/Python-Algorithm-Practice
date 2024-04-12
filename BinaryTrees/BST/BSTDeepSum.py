@@ -23,6 +23,9 @@ def deepestLeavesSum(root: TreeNode) -> int:
             if node.right:
                 queue.append(node.right)
 
+    print("Current queue:")
+    print(list(curr_queue))
+    print("\n")
     return sum([node.val for node in curr_queue])
 
 n5 = TreeNode(5, None, None)
